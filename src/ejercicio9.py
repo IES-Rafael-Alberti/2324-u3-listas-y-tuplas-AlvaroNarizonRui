@@ -4,6 +4,7 @@ Escribir un programa que pida al usuario una palabra y
 muestre por pantalla el número de veces que contiene cada vocal.
 """
 def cuenta_vocales(lista_palabra):
+    vocales = ["a","e","i","o","u"]
     lista_repeticiones = []
     for j in vocales:
         contador = 0
@@ -20,7 +21,6 @@ if __name__ == "__main__":
     lista_palabra = []
     for i in range(len(palabra)):
         lista_palabra.append(palabra[i])
-    vocales = ["a","e","i","o","u"]
     #Procesamiento
     repeticiones = cuenta_vocales(lista_palabra)
     #Salida
